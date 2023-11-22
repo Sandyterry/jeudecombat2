@@ -1,0 +1,85 @@
+.principal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ 
+ .joueur1{
+    width: 50%;
+    height: 100%;
+ }
+
+ .joueur2{
+    width: 50%;
+    height: 100%;
+ }
+
+
+
+h1 {
+    color: rgb(132, 157, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+}
+
+h3{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(132, 187, 236);
+}
+
+.characterej1{
+    margin-left: 10px;
+    height: 100%;
+    width: 90%;
+}
+
+.characterej2{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    height: 100%;
+    width: 95%;
+   
+}
+
+body {
+    width: 100%;
+    background-image: url(../images/arene9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.allcontainer1{
+    height: 100%;
+    margin-left: 15px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.allcontainer2{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5px;
+}
+
+img{
+    width: 100%;
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.cartecapacites{
+    width: 100%;
+}
