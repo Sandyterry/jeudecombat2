@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>titre du jeu</h1>
-    <h1>Choose your characters</h1>
+    <h1 class="choixcharacter">Choose your characters</h1>
    <div class="principal">
            
        <div class="joueur1">
@@ -20,7 +20,7 @@
                                <div class="archerj1 container" id="personnage1"onclick="selectionnerPersonnage('archerj1')">
                                            <h3>Archer</h3>
                                            <div class="imgarcher1">
-                                                <img src="images/archerfem.jpg" alt="archerj1" onclick="agrandirImage(this)">
+                                                <img src="images/archerfem.jpg" alt="archerj1">
                                             </div>
                                           
                                            
@@ -44,7 +44,7 @@
                                        <div class="guerrierj1 container" id="personnage1"onclick="selectionnerPersonnage('guerrierj1')">
                                            <h3>Guerrier</h3>
                                            <div class="imgguerrier1">
-                                                <img src="images/guerrier.jpg" alt="guerrierj1"onclick="agrandirImage(this)">
+                                                <img src="images/guerrier.jpg" alt="guerrierj1">
                                             </div>
    
                                                <!-- <div id="carteguerrierj1" class="cartecapacites">
@@ -62,7 +62,7 @@
                                        <div class="magej1 container" id="personnage1"onclick="selectionnerPersonnage('magej1')">
                                            <h3>Mage</h3>
                                            <div class="imgmage1">
-                                                <img src="images/mage fem.jpg" alt="magej1"onclick="agrandirImage(this)">
+                                                <img src="images/mage fem.jpg" alt="magej1">
                                             </div>
                                                <div class="capacity">
    
@@ -82,7 +82,7 @@
                                            <div class="pretrej1 container" id="personnage1"onclick="selectionnerPersonnage('pretrej1')">
                                                    <h3>Prêtre</h3>
                                                <div class="imgpretre1">
-                                                    <img src="images/pretre.jpg" alt="pretrej1"onclick="agrandirImage(this)">
+                                                    <img src="images/pretre.jpg" alt="pretrej1">
                                                 </div>
    
                                                <!-- <div id="cartepretrej1" class="cartecapacites">
@@ -108,7 +108,10 @@
                        
        </div> 
    </div>
-   
+        <div class="boutoncombat">
+            <button class="btnCombatStart" onclick="afficherImagePlusTard()">Lancer le combat</button>
+        </div>
+
                <div class="joueur2">
                    <h1>Player 2</h1>
    
@@ -117,7 +120,7 @@
                            
                                <div class="allcontainer2">
    
-                                   <div class="archerj2 container" id="personnage2" onclick="selectionnerPersonnage('archerj2')">
+                                   <div class="archerj2 container" id="personnage2" onclick="selectionnerPersonnage2('archerj2')">
                                        <h3>Archer</h3>
                                        <div class="imgarcher2">
                                             <img src="images/archer.jpg" alt="archerj2">
@@ -138,7 +141,7 @@
                                            </div>
                                    </div>
    
-                                           <div class="guerrierj2 container" id="personnage2" onclick="selectionnerPersonnage('guerrierj2')">
+                                           <div class="guerrierj2 container" id="personnage2" onclick="selectionnerPersonnage2('guerrierj2')">
                                                 <h3>Guerrière</h3>
                                                <div class="imgguerrier2">
                                                     <img src="images/guerriere.jpg" alt="guerrierj2">
@@ -156,7 +159,7 @@
                                         !-- </div> -->
                                            </div>
                                 </div>
-                                                   <div class="magej2 container" id="personnage2" onclick="selectionnerPersonnage('magej2')">
+                                                   <div class="magej2 container" id="personnage2" onclick="selectionnerPersonnage2('magej2')">
                                                        <h3>Mage</h3>
                                                        <div class="imgmage2">
                                                             <img src="images/mage hom.jpg" alt="magej2">
@@ -176,7 +179,7 @@
                                                            </div>
                                                     </div>
    
-                                               <div class="pretrej2 container" id="personnage2" onclick="selectionnerPersonnage('pretrej2')">
+                                               <div class="pretrej2 container" id="personnage2" onclick="selectionnerPersonnage2('pretrej2')">
                                                    <h3>Prêtresse</h3>
                                                    <div class="imgpretre2">
                                                         <img src="images/pretresse.jpg" alt="pretrej2">
@@ -203,6 +206,52 @@
                        </div>
                </div>
    </div>
+
+
+   <div class="aireDeCombat">
+        <div id="combatGauche">
+            <img class="imgCombatGauche" src="./images/guerrier.jpg" alt="">
+
+            <div class="boutonControleGauche">
+                <button class="btnAttaqueGauche">Bouton Attaque</button>
+                <button class="btnCapaGauche">Bouton Capacité</button>
+            </div>
+                    <div class="ptdeviegauche">
+                      Points de vie
+                    </div>  
+        </div>
+
+
+            <div id="combatDroite">
+                
+                <div class="boutonControleDroit">
+                    <button class="btnAttaqueDroite">Bouton Attaque</button>
+                    <button class="btnCapaDroite">Bouton Capacité</button>
+                </div>
+                <img class="imgCombatDroite" src="./images/guerriere.jpg" alt="">   
+                
+            </div>
+                    
+        </div>
+
+        <div class="pointsdeviecontainer">
+            <div class="PtdevieDroit">
+                <h2>Points de vie</h2>
+                <div class="barredevieD">
+                    <div class="remplissagevieD"></div>
+                </div>
+            </div> 
+        
+            <div class="PtdevieGauche">
+                <h2>Points de vie</h2>
+                <div class="barredevieG">
+                    <div class="remplissagevieG"></div>
+                </div>
+            </div>     
+        </div>
+    </div>
+
+    
     <script src="script.js"></script>
 </body>
 </html>
